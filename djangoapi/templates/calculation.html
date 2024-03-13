@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Table</title>
+</head>
+<body>
+    <h1>Calculation Table</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>TotalIncome</th>
+                <th>Total Expense</th>
+                <th>Profit or Loss</th>
+                <th>Profit</th>
+                <th>Loss</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in calcs %}
+                <tr>
+                    <td>{{ i.Date }}</td>
+                    <td>{{ i.Total_income }}</td>
+                    <td>{{ i.Total_expense }}</td>
+                    <td>{{ i.ProfitorLoss }}</td>
+                    <td>{{ i.Profit }}</td>
+                    <td>{{ i.Loss }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

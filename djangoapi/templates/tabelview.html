@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Table</title>
+</head>
+<body>
+    <h1>Expense Table</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Staff</th>
+                <th>Rent</th>
+                <th>Total</th>
+                <th>Other Expenses</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in table %}
+            <tr>
+                <td>{{ record.Date }}</td>
+                <td>{{ record.Staff }}</td>
+                <td>{{ record.Rent }}</td>
+                <td>{{ record.Total }}</td>
+                <td>{{ record.Otherexpense }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

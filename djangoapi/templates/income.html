@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Table</title>
+</head>
+<body>
+    <h1>Income Table</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Grocery</th>
+                <th>Bakery</th>
+                <th>Clothes</th>
+                <th>Electronics</th>
+            </tr>
+        </thead>
+        <tbody>
+            <form method="post">
+                {% csrf_token %}
+                <tr>
+                    <td><input type="date" name="date"></td>
+                    <td><input type="number" name="grocery"></td>
+                    <td><input type="number" name="bakery"></td>
+                    <td><input type="number" name="clothes"></td>
+                    <td><input type="number" name="electronics"></td>
+                    <td><button id="button">Submit</button></td>
+                </tr>
+            </form>
+        </tbody>
+    </table>
+</body>
+</html>
