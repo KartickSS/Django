@@ -14,3 +14,7 @@ def home(request):
 def display(request):
     objs=Member.objects.all()
     return render(request,'dbdisplay.html',{'objs':objs})
+
+
+def new(request):
+    pass
